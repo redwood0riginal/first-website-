@@ -1,0 +1,511 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+    --main-color:rgb(23, 120, 185);
+    --scondry-color:rgb(165, 162, 162);
+}
+/* header */
+.header .container{
+    width: 100%;
+    height: 70px;
+    padding:0 100px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 999; 
+    box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.75);;
+}
+.header .container .logo{
+    font-size: 25px;
+    font-weight: 800;
+    max-height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--scondry-color);
+    cursor: pointer;
+    transition: 0.3s; 
+}
+.header .container .logo:hover{
+    color: var(--main-color);
+}
+.header .container .nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header .container .nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.header .container .nav ul li a{
+    color: var(--scondry-color);;
+    margin-left:40px ;
+    font-size: 20px;
+    max-height: 70px;
+    transition: 0.3s;
+}
+.header .container .nav ul li a:hover{
+    color: var(--main-color);
+}
+
+/* section1 */
+.section{
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/the-town-bg-01.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.section .container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.section .container h1{
+    text-transform: capitalize;
+    font-size: 60px;
+    font-weight: 700;
+    color: white;
+    padding-bottom: 15px;
+    text-shadow: 2px 2px 4px  rgba(0, 0, 0, 0.75);;
+}
+.section .container p{
+    font-size:25px;
+    color: white;
+    line-height: 40px;
+    margin: 0 auto;
+}
+.section .container a i {
+    font-size: 40px;
+    color: var(--main-color);
+    background-color: var(--scondry-color);
+    padding: 15px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 100px;
+    opacity: 0.5;
+    transform: translate(-50%);
+    transition: 0.3s;
+}
+.section .container a i:hover{
+    opacity: 1;
+    color: var(--scondry-color);
+    background-color: var(--main-color);
+}
+
+/* section2 */
+.section2 .container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 150px 0;
+}
+.section2 .container .image{
+    padding:0 100px;
+}
+.section2 .container .text-area{
+margin: 0 100px 0 0;
+}
+.section2 .container .text-area h1{
+    font-size: 50px;
+    color:var(--main-color) ;
+    font-weight: 100;
+    padding-bottom: 20px ;
+}
+.section2 .container .text-area p{
+    color: var(--scondry-color);
+    font-size: 20px;
+    line-height: 40px;
+    
+}
+.section2 .container .text-area >p{
+    padding-bottom: 20px;
+}
+.section2 .container .text-area .second{
+    margin-bottom: 30px;
+}
+.section2 .container .text-area p span{
+    color:var(--main-color) ;
+}
+.section2 .container .text-area a{
+    border: 1px var(--main-color) solid; 
+    background-color: var(--main-color);
+    padding: 20px 40px;
+    border-radius: 30px;
+    color: white;
+    text-transform: capitalize;
+    transition: 0.3s;
+}
+.section2 .container .text-area a:hover{
+    opacity: 0.8;
+}
+.section2 .container2{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px ; 
+    margin-bottom: 20px;
+    gap: 20px;
+}
+.section2 .container2 .sec h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--main-color);
+    font-size: 25px;
+    padding: 20px 0;
+}
+.section2 .container2 .sec p{
+    line-height: 40px;
+    color: var(--scondry-color);
+}
+.section2 .container2 .sec i{
+
+    color: var(--main-color);
+    font-size:60px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .section3 */
+.section3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 100px 100px ; 
+    margin-bottom: 100px;
+}
+.section3 .textarea{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section3 .textarea h1{
+    font-size: 50px;
+    color:var(--main-color) ;
+    font-weight: 100;
+    padding-bottom: 20px ;
+    text-transform: capitalize;
+}
+.section3 .textarea p{
+    line-height: 40px;
+    color: var(--scondry-color);
+    padding:20px20px;
+    max-width: 750px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.section3  .images {
+    display: flex;;
+    padding: 0 100px 0 0;
+    justify-content: space-between;
+    gap: 55px;
+}
+.section3 .images .text{
+    width: 30px;
+    font-size: 29px;
+    color: var(--main-color);
+    font-weight: 100;
+}
+.section3 .images .text strong{
+    color: var(--scondry-color);
+    font-weight: 900;
+}
+.section3 .images1{
+    height: 100%;
+    position: relative;
+}
+.section3 .images1 .img{
+    display:block;
+}
+.section3 .images1 .middle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.section3 .images1 .middle .text{
+transform: translateY(20px);
+transition: transform 0.3s;
+}
+.section3 .images1 .middle:hover .text{
+    transform: translateY(0);
+
+}
+.section3 .images1 .middle:hover{
+    opacity: 1;
+}
+.section3 .images2{
+    height: 100%;
+    position: relative;
+}
+.section3 .images2 .img{
+    display:block;
+}
+.section3 .images2 .middle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.section3 .images2 .middle .text{
+transform: translateY(20px);
+transition: transform 0.3s;
+}
+.section3 .images2 .middle:hover .text{
+    transform: translateY(0);
+
+}
+.section3 .images2 .middle:hover{
+    opacity: 1;
+}
+.section3 .images3{
+    height: 100%;
+    position: relative;
+}
+.section3 .images3 .img{
+    display:block;
+}
+.section3 .images3 .middle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.section3 .images3 .middle .text{
+transform: translateY(20px);
+transition: transform 0.3s;
+}
+.section3 .images3 .middle:hover .text{
+    transform: translateY(0);
+
+}
+.section3 .images3 .middle:hover{
+    opacity: 1;
+}
+.section3 .images4{
+    height: 100%;
+    position: relative;
+}
+.section3 .images4 .img{
+    display:block;
+}
+.section3 .images4 .middle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.section3 .images4 .middle .text{
+transform: translateY(20px);
+transition: transform 0.3s;
+}
+.section3 .images4 .middle:hover .text{
+    transform: translateY(0);
+
+}
+.section3 .images4 .middle:hover{
+    opacity: 1;
+}
+.section3 .images5{
+    height: 100%;
+    position: relative;
+}
+.section3 .images5 .img{
+    display:block;
+}
+.section3 .images5 .middle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.section3 .images5 .middle .text{
+transform: translateY(20px);
+transition: transform 0.3s;
+}
+.section3 .images5 .middle:hover .text{
+    transform: translateY(0);
+
+}
+.section3 .images5 .middle:hover{
+    opacity: 1;
+}
+
+/* footer */
+
+.footer{
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/the-town-bg-02.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+.footer .areatext{
+    display: flex;
+    flex-direction: column;
+    padding: 65px 120px;
+    color: white;
+}
+.footer .areatext h1{
+    font-size: 60px;
+    font-weight: 100;
+    position: relative;
+    margin-bottom: 45px;
+    color:white;
+}
+
+.footer .areatext p{
+    line-height: 36px;
+    margin-top: 20px;
+}
+
+
+.footer .info{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer .info div {
+    width: 400px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.footer .info div i{
+font-size: 60px;
+padding: 0 10px;
+color: white; 
+}
+.footer .info div p{
+    font-size: 25px;
+    color: white;
+    padding-right: 20px;
+}
+.footer .info div p a{
+    color: white;
+}
+.footer form{
+    padding: 65px;
+    margin-left: 100px;
+}    
+.footer form input{
+    border-top: 1px solid var(--scondry-color);
+    background: none;
+    border: none;
+    border-bottom: 1px solid var(--scondry-color);
+    padding: 15px 55px;
+    text-align: center;
+    margin: 0 60px;
+    font-size: 20px;}
+    .footer form a{
+        background-color: var(--scondry-color);
+        color: var(--main-color);
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 20px;
+        transition: 0.3s;
+    }
+    .footer form a:hover{
+        background-color: var(--main-color);
+        color: var(--scondry-color);
+        opacity: 0.8;
+    } 
+    .copy{
+    color: white;
+    height: 112px;
+    display: flex;
+    outline: none;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+    }
+    .copy:focus{
+        outline: gray 1px solid;
+    }
+/* totop  */
+#toTop{
+    display: none;
+}
+.fa-angles-up{
+    position: fixed;
+    top: 80vh;
+    right: 60px;
+    font-size: 30px;
+    color: var(--scondry-color);
+    background: var(--main-color);
+    padding: 5px 7px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 999;
+    opacity: 0.2;
+    transition: 0.3s;
+}
+.fa-angles-up:hover{
+    opacity: 1;
+
+}
+
